@@ -1,5 +1,7 @@
 # IFUTURE
 
+Projeto Final, realizado em grupo, apresentado no bootcamp da Labenu. 
+
 Nome dos integrantes: 
 - Adrielly Costa
 - Andréa Soares
