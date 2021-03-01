@@ -11,7 +11,7 @@ import Loading from '../../Components/Loading/index'
 
 export default function SearchPage() {
   useProtectedPage()
-    const {states, setters, requests} = useContext(GlobalStateContext)
+    const {states} = useContext(GlobalStateContext)
     const classes = useStyles()
 
     const listaDeRestaurantes = useRequestData(`${BASE_URL}/restaurants`, {})

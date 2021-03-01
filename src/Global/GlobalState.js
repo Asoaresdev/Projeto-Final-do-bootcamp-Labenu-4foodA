@@ -1,9 +1,7 @@
 import React from 'react'
 import GlobalStateContext from "../Global/GlobalStateContext";
-import axios from "axios";
-import useRequestData from '../CustomHooks/useRequestData'
-import {useState, useEffect} from 'react'
-import {BASE_URL} from '../Constants/urls.js'
+import {useState} from 'react'
+
 
 export default function GlobalState(props) {
    

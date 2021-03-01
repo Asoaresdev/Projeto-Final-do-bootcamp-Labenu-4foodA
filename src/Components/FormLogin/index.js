@@ -39,13 +39,14 @@ const useStyles = makeStyles({
     justifyContent: "center",
   },
 });
+
 const FormLogin = () => {
   const classes = useStyles();
   const history = useHistory();
   const { setters } = useContext(GlobalStateContext);
   const formRef = useRef(null);
   const [showSenha, setShowSenha] = useState(false);
-  const [form, handleInput, resetState, handleFormErrors] = useForm({
+  const [form, handleInput, handleFormErrors] = useForm({
     email: undefined,
     password: undefined,
     errors: {

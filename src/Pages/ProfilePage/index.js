@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from 'react'
 import { useHistory } from "react-router-dom";
 import { goToEditPage, goToEditAddressPage } from '../../Routes/coordinators';
 import { DivPerfil,
-         HeaderDiv,
+        
          CaixaInfo,
          CaixaPerfil,
          CaixaEndereco,
@@ -21,7 +21,7 @@ import { DivPerfil,
 import icon from '../../assets/iconelapis.png';
 import Header from '../../Components/Header';
 import FooterMenu from '../../Components/FooterMenu';
-import GlobalStateContext from '../../Global/GlobalStateContext';
+
 import axios from 'axios';
 import { BASE_URL } from '../../Constants/urls';
 import useProtectedPage from '../../CustomHooks/useProtectedPage';
@@ -31,9 +31,7 @@ import Loading from "../../Components/Loading/index"
 export default function ProfilePage() {
   useProtectedPage()
     const history = useHistory();
-    const {states} = useContext(GlobalStateContext)
     const [orders, setOrders] = useState([])
-
     const perfil = useRequestData(`${BASE_URL}/profile`, {})
     
     useEffect(() => {
@@ -42,14 +40,14 @@ export default function ProfilePage() {
             auth:localStorage.getItem('token')
         }
       }
-      
       axios.get(`${BASE_URL}/orders/history`, headers)
       .then((response) => {
-        setOrders(response.data.orders)        
+        setOrders(response.data.orders)       
       })
       .catch((error) => {
         console.log(error)
       })
+
     }, []);
 
     function timeConverter(UNIX_timestamp){
@@ -61,8 +59,6 @@ export default function ProfilePage() {
       let time = date + ' ' + month + ' ' + year + ' '; 
       return time;
     }     
-
-    console.log(orders)
 
     if(!perfil.user) {
       return <Loading/>
@@ -88,9 +84,9 @@ export default function ProfilePage() {
          
           <CaixaHistoricoPedidos>Histórico de Pedidos</CaixaHistoricoPedidos>
           <ContainerDosPedidos> 
-            {orders.length !== 0 ? orders.map((item) => {                
+            {orders.length !== 0 ? orders.map((item) => {              
                   return (
-                  <CaixaPedido>
+                  <CaixaPedido key={Math.random()}>
                     <DivName>{item.restaurantName}</DivName>
                     <DivData>{timeConverter(item.createdAt)}</DivData>
                     <DivTotal>{`SUBTOTAL R$${item.totalPrice}`}</DivTotal>

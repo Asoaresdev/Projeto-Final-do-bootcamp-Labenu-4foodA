@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
-import { goBack, goToHomePage } from "../../Routes/coordinators";
 import FormLogin from "../../Components/FormLogin";
-import Header from "../../Components/Header";
-import Buttons from "../../Components/Buttons";
 import InitialScreen from "../../Components/InitialScreen";
 
 export default function LoginPage() {
-  const history = useHistory();
+ 
   const [exibirLogin, setExibirLogin] = useState(false);  
 
   useEffect(() => {
