@@ -1,4 +1,3 @@
-import React from 'react'
 import {useEffect, useState} from "react"
 import axios from 'axios'
 
@@ -11,7 +10,7 @@ export default function useRequestData(url, initialState) {
        }).catch((error) => {
            console.log(error.message)
        })
-   }, [url])
+   }, [url, header])
   
     return data
 }

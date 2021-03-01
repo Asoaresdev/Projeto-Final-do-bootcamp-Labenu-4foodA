@@ -14,7 +14,7 @@ const Menu = styled.div`
     -ms-overflow-style: none; 
     scrollbar-width: none;
 
-    a {
+    button {
         margin: 0.75em;
         color: var(--black);
         width: 5.438rem;
@@ -27,6 +27,9 @@ const Menu = styled.div`
         line-height: normal;
         letter-spacing: -0.39px;
         text-align: center;
+        background-color:white;
+        border:none;
+        outline: transparent;
     }
 
     .red {
@@ -163,7 +166,9 @@ export default function FeedMenu() {
     return (
         <Menu>
             {categoriesArray.map(e => {
-                return <a key={e} className={ states.filter === e? "red" : null} onClick={() => changeCategory(e)}>{e}</a>
+                return( 
+                <button key={e} className={ states.filter === e? "red" : null} onClick={() => changeCategory(e)}>{e}</button>
+                )
             })}
         </Menu>
     )

@@ -1,5 +1,4 @@
 import React,{ useContext, useEffect, useState} from "react";
-import { useHistory } from "react-router-dom";
 import Header from "../../Components/Header/index.js"
 import SearchBar from "../../Components/SearchBar/SearchBar"
 import CardRestaurante from "../../Components/CardRestaurante/CardRestaurante"
@@ -17,9 +16,9 @@ import Loading from '../../Components/Loading/index'
 export default function HomePage() {
   useProtectedPage()
   
-  const {states, setters, requests} = useContext(GlobalStateContext)
+  const {states} = useContext(GlobalStateContext)
   const [emAndamento, setEmAndamento]  = useState('')
-  const history = useHistory();
+  
 
 
  
@@ -49,7 +48,7 @@ if(emAndamento.order){
 }
 
 const listaDeRestaurantes = useRequestData(`${BASE_URL}/restaurants`, {})
-
+// console.log(listaDeRestaurantes.restaurants);
   if (!listaDeRestaurantes.restaurants) {
     return <HomeDiv><Loading className="loading"/></HomeDiv>
   }

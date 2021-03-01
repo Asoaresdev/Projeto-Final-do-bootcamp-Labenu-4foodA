@@ -23,7 +23,7 @@ export default function FooterMenu(props) {
             setFill({home: "#B8B8B8", cart: "#B8B8B8" , avatar: "#E8222E"})
         }
         
-    },[] )
+    },[props.page] )
 
     
 

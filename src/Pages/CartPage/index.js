@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { useHistory } from "react-router-dom";
 import Header from '../../Components/Header';
-import { goBack, goToHomePage, goToProfilePage, goToRestaurantsPage } from '../../Routes/coordinators';
 import GlobalStateContext from "../../Global/GlobalStateContext";
 import Buttons from '../../Components/Buttons';
 import PopUpQuantidade from "../../Components/PopUpQuantidade";
@@ -31,7 +30,7 @@ export default function CartPage() {
     const {states, setters} = useContext(GlobalStateContext)
     
     
-    const [loading, setLoading] = React.useState(false)
+    const [loading, setLoading] = useState(false)
     const [value, setValue] = useState('dinheiro');
     
     const handleChange = (event) => {
@@ -48,7 +47,6 @@ export default function CartPage() {
    
     const endereco = useRequestData(`${BASE_URL}/profile/address`, {})//pegando endereco na API
    
-    console.log(pedidos);
     
     let body = {}
     if (pedidos) {
@@ -61,13 +59,10 @@ export default function CartPage() {
         }
         
     }
-    console.log(body);
-
 
     let idRestaurante = ""
     if(states.carrinho.restaurante !== undefined){        
         idRestaurante = states.carrinho.restaurante.id
-        console.log(idRestaurante);
     }
     
     const submitOrder = (e) => {
@@ -91,13 +86,10 @@ export default function CartPage() {
                     :
                     <div>
                         <ContainerRestaurante>
-                            {/* {console.log(states.carrinho)} */}
                             <h2>{states.carrinho.restaurante.name}</h2>
                             <p>{states.carrinho.restaurante.address}</p>
                             <p>{states.carrinho.restaurante.deliveryTime} min</p>
                         </ContainerRestaurante>
-
-                            
 
                             {pedidos.map(item => {
                                 return <ItemCard 
