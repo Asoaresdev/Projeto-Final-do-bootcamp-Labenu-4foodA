@@ -1,90 +1,75 @@
-# IFUTURE
-
-Projeto Final, realizado em grupo, apresentado no bootcamp da Labenu. 
-
-Nome dos integrantes: 
-- Adrielly Costa
-- Andréa Soares
-- Davi Souza
-- David Biolchini
-- Rafael Julio
-
-
-Link do Surge: http://fat-leather.surge.sh/
-
-
-### 🛠 Tecnologias
-- React
-- Styled-components
-- Material-UI
+<h1 align="center"> Ifuture </h1>
+<p align="center">
+  <img  width="250" src="https://github.com/Asoaresdev/Projeto-Final-do-bootcamp-Labenu-4foodA/blob/master/src/assets/logo-future-eats-invert.svg">
+</p>
 
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=plastic&logo=React"/> <img src="https://img.shields.io/static/v1?label=vercel&message=deploy&color=blue&style=plastic&logo=VERCEL"/> [![GitHub license](https://img.shields.io/github/license/Asoaresdev/NLW-trilha_React?color=blue&style=plastic)](https://github.com/Asoaresdev/NLW-trilha_React)
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+#### Status do Projeto: Em desenvolvimento :warning:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<p align="center">
+<img  width="750" src="https://github.com/Asoaresdev/Projeto-Final-do-bootcamp-Labenu-4foodA/blob/master/data/ifutre.gif">
+</p>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h2>Objetivo:dart:</h2>
+O projeto final do bootcamp da Labenu, é uma aplicação, versão mobile, que simula ser o ifood, com as seguuintes funcionalidades
 
-### `npm run build`
+- [x] Cadastro de usuário
+- [x] Login de usuário
+- [x] Edição dos dados do usuário
+- [x] Busca nos restaurantes disponíveis
+- [x] Produtos inseridos no carrinho
+- [x] Remoção de produtos no carrinho
+- [x] Consumo de API
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Linguagens e libs utilizadas :books:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React](https://react-pdf.org/)
+- [styled Components](https://styled-components.com/)
+- [Material-UI](https://material-ui.com/pt/)
+- [React Router](https://reactrouter.com/web/guides/quick-start)
+- [axios](https://www.npmjs.com/package/axios)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Como rodar a aplicação :computer:
+No terminal, clone o projeto:
+```
+git clone https://github.com/Asoaresdev/NLW-trilha_React.git
+```
+Entre na pasta do arquivo
+```
+cd NLW-trilha_React
+```
+Instale as dependências
+```
+npm install
+```
+Execute a aplicação
+```
+npm run start
+```
+Abrir o navegador no localhost:3000
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Deploy:iphone:
 
-## Learn More
+https://labenu-ifuture.vercel.app/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Desenvolvedores :rocket:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+|[<img src="https://avatars.githubusercontent.com/u/69718777?s=400&u=49bfa0398c843ac583f45f5e2a66f783562fc2cb&v=4" width=115 > <br> <sub> Adrielly Felix Soares </sub>](https://github.com/adriellyfelix)|[<img src="https://avatars.githubusercontent.com/u/57377698?s=460&u=699230ff7b871595756e4bd77b21f16b19859456&v=4" width=115 > <br> <sub> Andréa Soares </sub>](https://github.com/Asoaresdev)|[<img src="https://avatars.githubusercontent.com/u/69723573?s=400&u=2f9a47f0e908d62f9f640adb7a4b706a94ffcef5&v=4" width=115 > <br> <sub> Davi Souza </sub>](https://github.com/DAVIGSOUZA)|[<img src="https://avatars.githubusercontent.com/u/63478613?s=400&u=6a8b4dadfd795acc1610899a83e81bbdf78de3bb&v=4" width=115 > <br> <sub> David Biolchini </sub>](https://github.com/DavBio)|[<img src="https://avatars.githubusercontent.com/u/68956077?s=400&u=46744a4f2452568e395ebc63a834542d82aeed28&v=4" width=115 > <br> <sub> Rafael Julio </sub>](https://github.com/rjuliuz)
+| -------- | -------- | -------- | -------- | -------- |
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
