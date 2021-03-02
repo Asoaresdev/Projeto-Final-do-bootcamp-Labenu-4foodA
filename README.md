@@ -18,7 +18,7 @@
 
 
 <h2>Objetivo:dart:</h2>
-O projeto final do bootcamp da Labenu, é uma aplicação, versão mobile, que simula ser o ifood, com as seguuintes funcionalidades
+O projeto final do bootcamp da Labenu, é uma aplicação, versão mobile, que simula ser o ifood, com as seguintes funcionalidades
 
 - [x] Cadastro de usuário
 - [x] Login de usuário
