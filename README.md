@@ -5,7 +5,7 @@
 
 
 
-<img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=plastic&logo=React"/> <img src="https://img.shields.io/static/v1?label=vercel&message=deploy&color=blue&style=plastic&logo=VERCEL"/> [![GitHub license](https://img.shields.io/github/license/Asoaresdev/NLW-trilha_React?color=blue&style=plastic)](https://github.com/Asoaresdev/NLW-trilha_React)
+<img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=plastic&logo=React"/> <img src="https://img.shields.io/static/v1?label=vercel&message=deploy&color=blue&style=plastic&logo=VERCEL"/> 
 
 
 
